@@ -42,10 +42,7 @@ class Person extends Component {
             <React.Fragment>
               <p>Age: {context.state.age}</p>
               <p>Name: {context.state.name}</p>
-              <button onClick={()=>{
-                context.state.age = 10001;
-                this.setState({});
-              }}>Increase the Age</button>
+              <button onClick={context.growAYearOlder}>Increase the Age</button>
             </React.Fragment>
           )}
         </Theme.Consumer>
