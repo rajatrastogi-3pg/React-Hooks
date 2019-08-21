@@ -9,7 +9,7 @@ function UseStateTrick2() {
       heading="State Trick 2"
       FunctionalComponent={FunctinalStateUpdate}
       ClassComponent={ClassStateUpdate}
-      previous="/statebasic"
+      previous="/statetrick1"
       next="/effectbasic"
     />
   );
