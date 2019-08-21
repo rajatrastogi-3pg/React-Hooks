@@ -3,13 +3,12 @@ import React, { useState, useMemo } from "react";
 const UseMemo = () => {
   const [counter1, setCounter1] = useState(0);
   const [counter2, setCounter2] = useState(0);
-  const [isOdd, setIsOdd] = useState(false);
   
- useMemo(() => {
+  const isOdd = useMemo(() => {
     console.log("useMemo callback ran")
     let i = 0;
-    while (i < 999999999) i++;
-    setIsOdd(counter1 % 2);
+    while (i < 9999) i++;
+    return counter1 % 2;
   }, [counter1]);
 
   return (
