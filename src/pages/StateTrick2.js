@@ -1,0 +1,18 @@
+import React from "react";
+import Layout from "../layout";
+import ClassStateUpdate from "../components/ClassBased/State/StateUpdate";
+import FunctinalStateUpdate from "../components/FunctionBased/State/StateUpdate";
+
+function UseStateTrick2() {
+  return (
+    <Layout
+      heading="State Trick 2"
+      FunctionalComponent={FunctinalStateUpdate}
+      ClassComponent={ClassStateUpdate}
+      previous="/statebasic"
+      next="/effectbasic"
+    />
+  );
+}
+
+export default UseStateTrick2;
