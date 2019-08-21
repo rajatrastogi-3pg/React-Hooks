@@ -7,7 +7,7 @@ const UseMemo = () => {
   const isOdd = useMemo(() => {
     console.log("useMemo callback ran")
     let i = 0;
-    while (i < 999999999) i++;
+    while (i < 9999) i++;
     return counter1 % 2;
   }, [counter1]);
 
