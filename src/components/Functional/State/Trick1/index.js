@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 const Trick1 = () => {
   const [count, setCount] = useState(0);
-  
+
   const handleUp = _ => {
     for (let i = 0; i < 5; i++) {
-      setCount(oldcount => oldcount + 1);
+      setCount(count + 1);
     }
   };
-  
+
   return (
     <div
       style={{
@@ -18,7 +18,8 @@ const Trick1 = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center"
-      }}>
+      }}
+    >
       <button onClick={handleUp}>UP by 5</button>
       <h3>{count}</h3>
     </div>

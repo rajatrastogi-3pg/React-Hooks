@@ -11,16 +11,22 @@ export default class BasicEffect extends Component {
   };
 
   componentDidMount() {
-    console.log("componentDidMount called");
     document.title = this.state.count;
+    document.getElementById("countHeading").innerHTML = this.state.count;
   }
 
   componentDidUpdate() {
-    console.log("componentDidUpdate called");
     document.title = this.state.count;
+    document.getElementById("countHeading").innerHTML = this.state.count;
   }
 
   render() {
-    return <button onClick={this.handleUpdate}>Click Me</button>;
+    return (
+      <>
+        <button onClick={this.handleUpdate}>Click Me</button>
+        <br />
+        <h1 id='countHeading'>...</h1>
+      </>
+    );
   }
 }

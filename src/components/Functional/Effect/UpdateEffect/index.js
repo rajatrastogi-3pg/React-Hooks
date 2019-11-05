@@ -5,13 +5,17 @@ function BasicEffect() {
   const [subCount, setSubCount] = useState(1);
 
   useEffect(() => {
-    console.log("useEffect for mainCount called", mainCount);
-    document.getElementById("mainCount").innerHTML = mainCount;
-  }, [mainCount]);
+    const ol = document.getElementById("logBoard");
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode("Effect for main counter called"));
+    ol.appendChild(li);
+  });
 
   useEffect(() => {
-    console.log("useEffect for subCount called");
-    document.getElementById("subCount").innerHTML = subCount;
+    const ol = document.getElementById("logBoard");
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode("Effect for sub counter called"));
+    ol.appendChild(li);
   });
 
   const handleMainCountUpdate = _ => {
@@ -33,10 +37,13 @@ function BasicEffect() {
       </button>
       <br />
       <span>Main count</span>
-      <span id="mainCount" />
+      <span id='mainCount'>{mainCount}</span>
       <br />
       <span>Sub count</span>
-      <span id="subCount" />
+      <span id='subCount'>{subCount}</span>
+      <hr />
+      <h2>Logger</h2>
+      <ul id='logBoard' />
     </>
   );
 }

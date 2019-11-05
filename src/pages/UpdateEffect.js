@@ -1,13 +1,13 @@
 import React from "react";
 import Layout from "../layout";
-import UpdateEffect from "../components/FunctionBased/Effect/UpdateEffect";
+import UpdateEffect from "../components/Functional/Effect/UpdateEffect";
 
 const StateBasic = () => (
   <Layout
-    heading="componentWillUpdate with useEffect"
+    heading='componentDidUpdate with useEffect'
     FunctionalComponent={UpdateEffect}
-    previous="/effectbasic"
-    next="/unmounteffect"
+    previous='/effectbasic'
+    next='/unmounteffect'
   />
 );
 

@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 
 const BasicCounter = () => {
-  const [count, setCount] = useState(0);
-  
   const handleUp = _ => {
-    setCount(count + 1);
+    //handle up here
   };
-  
+
   const handleDown = _ => {
-    setCount(count - 1);
+    //handle down here
   };
-  
+
   return (
     <div
       style={{
@@ -20,9 +18,10 @@ const BasicCounter = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center"
-      }}>
+      }}
+    >
       <button onClick={handleUp}>UP!!!!</button>
-      <h3>{count}</h3>
+      <h3>0</h3>
       <button onClick={handleDown}>DOWN!!!!</button>
     </div>
   );

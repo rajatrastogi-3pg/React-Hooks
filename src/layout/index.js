@@ -23,8 +23,9 @@ const Layout = ({
             display: "flex",
             flexDirection: "column",
             alignItems: "center"
-          }}>
-          <h2>Class based Component</h2>
+          }}
+        >
+          <h2>Class Component</h2>
           <ClassComponent />
         </div>
       )}
@@ -35,8 +36,9 @@ const Layout = ({
             display: "flex",
             flexDirection: "column",
             alignItems: "center"
-          }}>
-          <h2>Function based Component</h2>
+          }}
+        >
+          <h2>Functional Component</h2>
           <FunctionalComponent />
         </div>
       )}

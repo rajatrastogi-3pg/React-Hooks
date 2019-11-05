@@ -8,7 +8,6 @@ const StateUpdate = () => {
 
   const handleChange = evt => {
     setState({
-      ...state,
       [evt.target.name]: evt.target.value
     });
   };
@@ -22,20 +21,21 @@ const StateUpdate = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center"
-      }}>
+      }}
+    >
       <input
-        type="text"
-        name="firstName"
+        type='text'
+        name='firstName'
         value={state.firstName}
-        placeholder="First Name"
+        placeholder='First Name'
         onChange={handleChange}
       />
       <br />
       <input
-        type="text"
-        name="lastName"
+        type='text'
+        name='lastName'
         value={state.lastName}
-        placeholder="Last Name"
+        placeholder='Last Name'
         onChange={handleChange}
       />
       <br />
