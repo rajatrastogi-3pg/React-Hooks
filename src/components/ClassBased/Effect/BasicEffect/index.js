@@ -12,12 +12,12 @@ export default class BasicEffect extends Component {
 
   componentDidMount() {
     document.title = this.state.count;
-    document.getElementById("countHeading").innerHTML = this.state.count;
+    document.getElementById("countHeadingClass").innerHTML = this.state.count;
   }
 
   componentDidUpdate() {
     document.title = this.state.count;
-    document.getElementById("countHeading").innerHTML = this.state.count;
+    document.getElementById("countHeadingClass").innerHTML = this.state.count;
   }
 
   render() {
@@ -25,7 +25,7 @@ export default class BasicEffect extends Component {
       <>
         <button onClick={this.handleUpdate}>Click Me</button>
         <br />
-        <h1 id='countHeading'>...</h1>
+        <h1 id='countHeadingClass'>...</h1>
       </>
     );
   }

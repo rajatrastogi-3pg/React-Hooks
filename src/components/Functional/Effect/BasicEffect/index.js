@@ -5,7 +5,7 @@ function BasicEffect() {
 
   // useEffect(() => {
   //   document.title = count;
-  //   document.getElementById("countHeading").innerHTML = count;
+  //   document.getElementById("countHeadingFunctionl").innerHTML = count;
   // });
 
   const handleUpdate = _ => {
@@ -16,7 +16,7 @@ function BasicEffect() {
     <>
       <button onClick={handleUpdate}>Click Me</button>
       <br />
-      <h1 id='countHeading'>...</h1>
+      <h1 id='countHeadingFunctionl'>...</h1>
     </>
   );
 }
